@@ -1,0 +1,11 @@
+import math
+
+def calculate_d(t, s):
+    f1 = (2 * t - (-2 * s) - math.sin(1.17)) / (5 + abs(1.17))
+    f2 = (2 * 2.2 - t - math.sin(s - t)) / (5 + abs(s - t))
+    return f1 + f2
+
+t = 1.0
+s = 2.0
+result = calculate_d(t, s)
+print(f"Значення d: {result}")
